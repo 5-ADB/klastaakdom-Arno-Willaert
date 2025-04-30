@@ -49,10 +49,20 @@ const toestellen = [
  * Zorg ervoor dat je de verschillende toestellen weergeeft op 1 rij
  * res: wasmachine, droogkast
  */
+toestellen.forEach((toestel) => {
+  console.log(toestel.benaming);
+})
 
-
-
+function verschillendeToestellen()
+ 
 /**
  * Geef het id + toestel + probleem van de problemen die nog niet zijn opgelost
  * res: 2 - droogkast - filter stuk
  */
+
+
+toestellen.forEach((toestel) =>{
+  toestel.onderhoud.forEach((omschrijving)=>{
+    console.log(`${toestel.id } - ${toestel.benaming } - ${omschrijving.omschrijving}`);
+  })
+})
