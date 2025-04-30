@@ -53,7 +53,7 @@ toestellen.forEach((toestel) => {
   console.log(toestel.benaming);
 })
 
-function verschillendeToestellen()
+
  
 /**
  * Geef het id + toestel + probleem van de problemen die nog niet zijn opgelost
@@ -63,6 +63,8 @@ function verschillendeToestellen()
 
 toestellen.forEach((toestel) =>{
   toestel.onderhoud.forEach((omschrijving)=>{
-    console.log(`${toestel.id } - ${toestel.benaming } - ${omschrijving.omschrijving}`);
+    if (omschrijving.opgelost == true){
+      console.log(`${toestel.id } - ${toestel.benaming } - ${omschrijving.omschrijving }`)
+    }
   })
 })

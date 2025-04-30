@@ -42,3 +42,15 @@ const toestellen = [
     ],
   },
 ];
+
+const nietAfgewerkt = document.querySelector(".nietAfgehandeld")
+const vinkje = document.querySelector("#vehicle3") 
+
+
+toestellen.forEach((toestel) =>{
+  toestel.onderhoud.forEach((omschrijving)=>{
+    if (omschrijving.opgelost == false){
+      console.log(`${toestel.benaming } - ${omschrijving.omschrijving }`)
+    }
+  })
+})
